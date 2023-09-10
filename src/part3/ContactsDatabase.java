@@ -17,6 +17,10 @@ public class ContactsDatabase {
 			if (input.isEmpty() || input.equals("x")) {
 				break;
 			}
+			if (input.split(" ").length != 2) {
+				System.out.println("Invalid input. Try again.");
+				continue;
+			}
 			contactBook.put(input.split(" ")[0], input.split(" ")[1]);
 		}
 	}
